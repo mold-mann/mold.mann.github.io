@@ -1,0 +1,296 @@
+body { 
+	margin: 0; 
+	background-color: black; 
+}
+
+@font-face { 
+  font-family: 'main'; 
+  src: url('fonts/TirtoWritterRegular-Eajrl.ttf');
+}
+
+p {
+  font-family: 'main';
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.container { 
+	padding: 10%; 
+}
+
+.top-row { 
+	display: flex; 
+	justify-content: flex-end; 
+}
+
+.box { 
+	flex: 10 1 1 1 1 1; 
+	background-color: #f5deb3; 
+	padding: 2%; 
+	text-align: center;
+	font-family: 'main'; 
+}
+
+.foreground { 
+	background-color: #f5deb3; 
+	border-top-left-radius: 30%; 
+	border-top-right-radius: 30%; 
+}
+
+.background { 
+	background-color: #b38b5d; 
+	border-top-left-radius: 30%; 
+	border-top-right-radius: 30%; 
+}
+
+.bottom-box { 
+	position: relative; 
+	min-height: 90vh; 
+	background-color: #f5deb3; 
+	padding: 4%; 
+	display: flex; 
+	justify-content: center; 
+	align-items: flex-start; 
+	border-radius: 3% 0% 3% 3%; 
+}
+
+.paper { 
+  background: #fffcfa; 
+  width: 100%; 
+  min-height: 85vh; 
+  overflow: scroll; 
+  scrollbar-width: none;  
+  padding: 2%; 
+  box-sizing: border-box; 
+  animation: 1s fadeInUp;
+}
+
+
+.aboutcontainer { 
+	display: flex; 
+	flex-direction: column; 
+}
+
+.row { 
+	display: flex; 
+}
+
+.col { 
+	flex: 1; 
+	background: white; 
+	border: 1px solid black; 
+}
+
+.mytext { 
+	border: 1px solid black; 
+	margin: 0; 
+	font-family:'main';
+}
+
+.redacted { 
+	background-color: black; 
+}
+
+
+
+.dropdown { 
+	z-index:10;
+	position: relative; 
+	display: inline-block; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20%;
+  box-shadow: 0%0.8% 1.6% 0% rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.2% 1.6;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticker{
+  	background: white; 
+  	width: 20%;
+	position: absolute; 
+	top: 10%;
+  	min-height: 10vh; 
+  	border-radius: 1%; 
+  	padding: 2%; 
+  	box-sizing: border-box; 
+	text-align: center;
+	font-family: 'main';
+}
+
+input[type=text], select, textarea {
+  	width: 100%;
+  	padding: 1.2%;  
+  	border-radius: 0.4%;
+  	box-sizing: border-box; 
+  	margin-top: 0.6%; 
+  	margin-bottom: 1.6%; 
+  	resize: vertical;
+	font-family: 'main';
+}
+
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 1.2% 2%;
+  border: none;
+  border-radius: 0.4%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container{
+	font-family: 'main';
+}
+
+.centerimg{
+	display: flex;
+	justify-content: center;
+	width: 45%;
+}
+
+h1{
+	text-align:center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+  padding: 40px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+align-items: auto
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+
+
+/* 
+	after submission bring to a new page then reroute
+*/
